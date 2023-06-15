@@ -3,6 +3,8 @@ import java.util.Hashtable;
 public class Library extends Building {
 
   private Hashtable<String, Boolean> collection;
+  private boolean hasElevator;
+  private boolean hasCafe;
 
   public Library(String name, String address, int nFloors) {
     super(name, address, nFloors);
@@ -55,4 +57,4 @@ public class Library extends Building {
       Library myLibrary = new Library("Neilson","Elm Street", "4.0");
     }
   
-  }
+  

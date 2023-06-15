@@ -1,4 +1,3 @@
-/* This is a stub for the Cafe class */
 public class Cafe extends Building {
 
     private int nCoffeeOunces; // The number of ounces of coffee remaining in inventory
@@ -32,7 +31,7 @@ public class Cafe extends Building {
         System.out.println("Available options at " + this.name + ":\n + enter() \n + exit() \n + goToFloor(n)");
     }
 
-    public void goToFloor(int floorNum) {
+    public void goToFloor(int n) {
         if (this.activeFloor == -1) {
             throw new RuntimeException("You are not inside this Building. Must call enter() before navigating between floors.");
         }
